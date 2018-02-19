@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body class="body">
+    <div class="wrapper">
+        <header class="header">
+            <div class="nav">
+                <ul class="nav__items">
+                    <li class="nav__item nav__item--active">
+                        <a class="nav__item--link" href="#">Главная</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__item--link" href="#">ФОТО И ВИДЕО</a>
+                    </li>
+                    <li class="nav__item nav__item--logo">
+                        <a class="nav__item--link" href="#">
+                            <picture>
+                                <source media="(max-width: 320px)" srcset="img/logotyle-mobile-svg.svg">
+                                <source media="(max-width: 768px)" srcset="img/logotype-tablet.svg">
+                                <source media="(min-width: 769px)" srcset="img/logotype-desktop.svg">
+                                <img src="img/logotype-desktop.svg" class='sedona-logo' alt="Седона" width="188" height="98">
+                            </picture>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__item--link" href="#">Форма отзыва</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__item--link" href="#">HTML Academy</a>
+                    </li>
+                    <input type="checkbox" id="nav-trigger" class="nav-trigger" onclick="toggleNavBar()";/>
+                    <label for="nav-trigger" id='label' class="x-icon"></label>
+                </ul>
+            </div>
+        </header>
+        <main class="main">
+            <div class="intro intro--first-page">
+                <source media="(max-width: 320px)" srcset="img/text-mobile-svg.svg">
+                <source media="(max-width: 768px)" srcset="img/text-tablet-svg.svg">
+                <source media="(min-width: 769px)" srcset="img/text-desktop-svg.svg">
+                <img  class="intro__banner" src="img/text-desktop-svg.svg" >
+            </div>
+            <section class="content-block1">
+                <div class="content-block1__title content-title">
+                    <h1 class="content-title__heading">СЕДОНА — небольшой городок в АРИЗОНЕ, зАСЛУЖИвающий большего!</h1>
+                    <p class="content-title__info">Рассмотрим 5 причин, по которым Седона круче чем гранд каньон!</p>
+                </div>
+
+                <!--first-row-->
+                <div class="content-advantages">
+                    <div class="content-advantages__first-row first-row">
+                        <div class="first-row__title title">
+                            <h1 class="title--heading">НАСТОЯЩИЙ ГОРОДОК</h1>
+                            <span class="title--number">— №1 —</span>
+                            <p class="title--info">
+                                СЕДОНА НЕ АТРАКЦИОН ДЛЯ ТУРИСТОВ,
+                                ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ
+                            </p>
+                        </div>
+                        <div class="first-row__bg"></div>
+                    </div>
+
+                    <!--second-row-->
+                    <div class="content-advantages__second-row second-row">
+                        <div class="second-row__features">
+                            <div class="features__icon-wrap">
+                                <img src="img/icon-house-svg.svg" alt="icon-house" class="second-row__features--logo">
+                            </div>
+                            <div class="features__text-wrap">
+                                <h2 class="second-row__features--header">ЖИЛЬЕ</h2>
+                                <p class="second-row__features--info">РЕКОМЕНДУЕМ ПОЖИТЬ В НАСТОЯЩЕМ МОТЕЛЕ, ВСЕ КАК В КИНО!</p>
+                            </div>
+                        </div>
+                        <div class="second-row__features">
+                            <div class="features__icon-wrap">
+                                <img src="img/icon-burger-svg.svg" alt="icon-burger" class="second-row__features--logo">
+                            </div>
+                            <div class="features__text-wrap">
+                                <h2 class="second-row__features--header">ЕДА</h2>
+                                <p class="second-row__features--info">ВСЕГДА ЗАКАЗЫВАЙТЕ ФИРМЕННЫЙ БУРГЕР, ВЫ НЕ РАЗОЧАРУЕТЕСЬ!</p>
+                            </div>
+                        </div>
+                        <div class="second-row__features">
+                            <div class="features__icon-wrap">
+                                <img src="img/icon-gift-svg.svg" alt="icon-gift" class="second-row__features--logo">
+                            </div>
+                            <div class="features__text-wrap">
+                                <h2 class="second-row__features--header">СУВЕНИРЫ</h2>
+                                <p class="second-row__features--info">НЕ ТОЛЬКО КИТАЙСКОГО, НО И МЕСТНОГО ПРОИЗВОДСТВА!</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--third-row-->
+                    <div class="content-advantages__third-row third-row">
+                        <div class="third-row__bg"></div>
+                        <div class="third-row__title title">
+                            <h1 class="title--heading">ТАМ ЕСТЬ Мост дьявола</h1>
+                            <span class="title--number">— №2 —</span>
+                            <p class="title--info">
+                                Да, по нему можно пройти!
+                                Если конечно вы осмелитесь
+                            </p>
+                        </div>
+                    </div>
+
+                    <!--fourth-row-->
+                    <div class="content-advantages__fourth-row fourth-row">
+                        <div class="fourth-row__title title">
+                            <h1 class="title--heading">НЕБОЛЬШАЯ ПЛОЩАДЬ</h1>
+                            <span class="title--number">— №3 —</span>
+                            <p class="title--info">ВСЕ достопримечательности находятся очень близко
+                            </p>
+                        </div>
+                        <div class="fourth-row__title title">
+                            <h1 class="title--heading">КРАСИВАЯ ДОРОГА</h1>
+                            <span class="title--number">— №4 —</span>
+                            <p class="title--info">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем
+                                НЕ СКУЧНО!
+                            </p>
+                        </div>
+                        <div class="fourth-row__title title">
+                            <h1 class="title--heading">МАЛО ТУРИСТОВ</h1>
+                            <span class="title--number">— №5 —</span>
+                            <p class="title--info">Большинство едет в гранд каньон и толпится там
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <section class="search-hotel">
+                <h1 class="search-hotel__title">ЗАИНТЕРЕСОВАЛИСЬ?</h1>
+                <p class="search-hotel__info">Укажите предполагаемые даты поездки <br>
+                    и мы покажем вам лучшие предложения гостиниц в седоне</p>
+                <button class="search-hotel__button">Найти гостинницу</button>
+            </section>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2984738.7926880657!2d-110.99391886844528!3d32.4297760040897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da3e24dadca7b%3A0xcb5038e1857dae5c!2sBest+Western+Plus+Arroyo+Roble+Hotel+%26+Creekside+Villas!5e0!3m2!1sru!2sua!4v1514941029951" width="1200" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer__hashtag">
+                <span>#VISITSEDONA</span>
+            </div>
+            <div class="footer__social">
+                <ul class="social-list">
+                    <li class="social-list__item">
+                        <a href="#" class="social-list__link">
+                            <img src="img/icon-twitter-svg.svg" alt="">
+                        </a>
+                    </li>
+                    <li class="social-list__item">
+                        <a href="#" class="social-list__link">
+                            <img src="img/icon-facebook-svg.svg" alt="">
+                        </a>
+                    </li>
+                    <li class="social-list__item">
+                        <a href="#" class="social-list__link">
+                            <img src="img/icon-youtube-svg.svg" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__copyright">
+                <span class="footer__copyright--text">РАЗРАБОТАНО</span>
+            </div>
+        </footer>
+    </div>
+<script>
+
+    window.addEventListener('resize', function() {
+        if(window.innerWidth>321){
+            var navElements = document.getElementsByClassName('nav__items');
+            var navLogo = document.getElementsByClassName('nav__item--logo')
+            navElements[0].style.visibility = "visible"
+            navLogo[0].style.margin = 0;
+        }
+    });
+
+    function toggleNavBar() {
+        var hamburger = document.getElementById('nav-trigger');
+        var main = document.getElementsByClassName('main');
+        var navElements = document.getElementsByClassName('nav__items');
+        var navLogo = document.getElementsByClassName('nav__item--logo');
+        var navTrigger = document.getElementById('nav-trigger');
+        var label = document.getElementById('label');
+
+        if(hamburger.checked && window.innerWidth<321){
+            label.className = "x-icon"
+            navLogo[0].style.margin = '0';
+            navLogo[0].visibility = "visible";
+            navElements[0].style.visibility = "visible";
+        }
+        else if(!hamburger.checked ){
+            label.className = "hamburger";
+            var navElements = document.getElementsByClassName('nav__items');
+            main[0].style.margin = '0';
+            navLogo[0].style.marginTop = '-223px';
+            navElements[0].style.visibility = "hidden";
+            navTrigger.label.style.visibility = "hidden";
+            navLogo.visibility = 'visible';
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,363 @@
+.main{
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.intro--first-page{
+  background-image: url("../img/2-layers.jpg");
+  height: 518px;
+  @include max-width;
+  display: flex;
+  justify-content: center;
+
+
+    background-size:cover;
+    background-repeat: no-repeat;
+
+    background-position: center;
+}
+.intro__banner{
+  max-width: 460px;
+  width: 100%;
+  height: 350px;
+  margin-top: 78px;
+  transformation: .2s;
+}
+.title{
+  background-color: #81b3d2;
+  width: 33.3333%;
+  display: flex;
+  flex-direction: column;
+}
+.content-title{
+  padding-top: 51px;
+  max-width: 486px;
+  width: 100%;
+  margin: 0 auto;
+}
+.content-title__heading{
+  font-size: 20px;
+  padding-top:23px;
+  @include pt-sans-heading;
+}
+.content-title__info{
+  padding-top: 42px;
+  padding-bottom: 55px;
+  @include pt-sans-normal;
+  color: #696969;
+}
+
+.content-advantages__first-row{
+  @include max-width;
+  //height: 256px;
+  display: flex;
+  justify-content: flex-start;
+  color: #ffffff;
+}
+.first-row__title{
+  width: 33.33333%;
+  display: flex;
+  flex-direction: column;
+}
+.title--heading{
+  @include pt-sans-heading;
+  padding-top: 57px;
+  max-width: 160px;
+}
+.title--number {
+  margin: 0 auto;
+  padding-top: 21px;
+  text-align: center;
+}
+.title--number{
+  @include pt-sans-normal;
+}
+.title--info{
+  @include pt-sans-normal;
+  padding-top: 32px;
+  max-width: 257px;
+}
+.first-row__bg{
+  background-image: url("../img/photo-city-1x.png");
+  width: 66.666%;
+}
+
+.content-advantages__second-row{
+  display: flex;
+  justify-content: space-between;
+}
+
+.second-row__features{
+  margin-top: 60px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.features__icon-wrap,
+.features__text-wrap{
+  flex-direction: column;
+  width: 100%;
+}
+.second-row__features--header{
+  @include pt-sans-heading;
+  color: #000;
+  padding: 33px 0;
+}
+.second-row__features--info{
+  @include pt-sans-normal;
+  color: #333333;
+  padding-bottom: 67px;
+  max-width: 270px;
+  width: 100%;
+}
+
+.content-advantages__third-row{
+  display: flex;
+  justify-content: flex-end;
+}
+.third-row__bg{
+  width: 66.666666%;
+  height: 256px;
+  background-image:url('../img/photo-bridge1x.png');
+    img{
+      max-width: 799px;
+      width: 100%;
+      height: 256px;
+  }
+}
+.third-row__title{
+  width: 33.33333%;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+
+.content-advantages__fourth-row{
+  display: flex;
+  justify-content:flex-start;
+}
+
+.fourth-row__title{
+  background-color: #eee;
+  color: #000;
+  padding-bottom: 47px;
+}
+
+.search-hotel{
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 66px;
+}
+.search-hotel__title{
+  @include pt-sans-heading;
+  font-size: 30px;
+  padding-top: 57px;
+  padding-bottom: 39px;
+}
+.search-hotel__info{
+  @include pt-sans-normal;
+  max-width: 430px;
+  width: 100%;
+  padding-bottom: 52px;
+}
+.search-hotel__button{
+  color: #fff;
+  max-width: 458px;
+  width: 100%;
+  height: 58px;
+  @include pt-sans-heading;
+  background-color: #81b3d2;
+  border: none;
+}
+
+.map iframe{
+  left:0;
+  top:0;
+  height:350px;
+  width:100%;
+}
+
+@media screen and(max-width: 768px) {
+  .intro--first-page{
+    @include tablet-max-width;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    background-image: url("../img/2-layers-tablet.jpg");
+  }
+
+  .content-title{
+    padding-top: 23px;
+  }
+  .search-hotel{
+    padding-bottom: 57px;
+    &__info{
+      padding-bottom: 49px;
+    }
+  }
+}
+
+@media screen and(max-width: 320px) {
+  .intro--first-page{
+    height: 389px;
+    background-position: 50% 50%;
+    background-image: url("../img/2-layers-mobile.jpg");
+    background-repeat: no-repeat;
+  }
+  .intro__banner{
+    margin-top: 0;
+  }
+  .content-title__info{
+    padding-bottom: 0;
+  }
+  .content-advantages__first-row{
+    display: flex;
+    flex-direction: column;
+
+    .first-row__title,
+    .first-row__bg{
+      width: 100%;
+    }
+    .first-row__title:first-child{
+      padding-top: 37px;
+      background-image: url("../img/white-copy-2.svg");
+      background-repeat: no-repeat;
+      background-position: 75% 0%;
+    }
+    .first-row__title{
+      .title--heading{
+        padding-top: 43px;
+        max-width: 257px;
+        font-size: 18px;
+      }
+      .title--info{
+        padding-top: 26px;
+        padding-bottom: 46px;
+      }
+    }
+    .first-row__bg{
+      display: block;
+      height: 260px;
+      @include mobile-max-width;
+      background-image: url("../img/photo-city-1x.jpg");
+    }
+  }
+  .content-advantages__second-row{
+    display: flex;
+    flex-direction: column;
+
+    .second-row__features{
+      margin-top: 24px;
+      display: flex;
+      flex-direction: row;
+
+      @include mobile-max-width;
+      .features__icon-wrap{
+        width:20%;
+      }
+      &--header{
+        padding:0;
+      }
+    }
+    .second-row__features--logo{
+      width: 39px;
+      height: 37px;
+    }
+    .features__text-wrap{
+      .second-row__features--header,
+      .second-row__features--info{
+        text-align: left;
+        padding:0 0 10px 10px;
+      }
+      &:first-child{
+        margin-top: 10px;
+      }
+      &:last-child{
+        margin-bottom: 20px;
+      }
+    }
+  }
+  .content-advantages__third-row{
+    display: flex;
+    flex-direction: column-reverse;
+    height: 451px;
+    .third-row__title{
+      height: 191px;
+      @include mobile-max-width;
+      .title--heading{
+        padding-top: 45px;
+        font-size: 18px;
+        @include mobile-max-width;
+      }
+      .title--info{
+        padding-top: 26px;
+        font-size: 15px;
+      }
+    }
+    .third-row__bg{
+      width: 100%;
+      max-width: 320px;
+      background-image: url('../img/photo-bridge-1x.jpg');
+    }
+  }
+  .content-advantages__fourth-row{
+    display: flex;
+    flex-direction: column;
+
+    .fourth-row__title{
+      @include mobile-max-width;
+      padding-bottom: 0;
+      border-bottom:1px solid #d6d6d6;
+      &:last-child{
+        border-bottom:none;
+      }
+      .title--heading{
+        @include mobile-max-width;
+        padding-top: 29px;
+      }
+      .title--number{
+        padding-bottom: 26px;
+      }
+      .title--info{
+        padding-top: 0;
+        padding-bottom: 17px;
+      }
+    }
+  }
+  .search-hotel{
+    padding-bottom: 0;
+    @include mobile-max-width;
+    .search-hotel__title{
+      font-size: 22px;
+      transformation: 0.2s;
+      padding-top: 33px;
+      padding-bottom: 0;
+
+    }
+    .search-hotel__info{
+      @include pt-sans-normal;
+      font-size: 15px;
+      padding-top: 33px;
+      padding-bottom: 42px;
+
+    }
+    .search-hotel__button{
+      max-width: 280px;
+      height: 58px;
+      width: 90%;
+      margin: auto;
+      margin-bottom: 50px;
+      text-align:center
+    }
+  }
+  .map{
+    max-width: 320px;
+    width: 100%;
+  }
+}
+
+
+//navLogo.style.visibility = "visible";
+//

@@ -1,0 +1,29 @@
+@mixin pt-sans-heading{
+  margin: 0 auto;
+  font-size: 21px;
+  font-family:'PT Sans heading', Helvetica sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height:24px;
+}
+@mixin pt-sans-normal{
+  font-size: 17px;
+  font-family:'PT Sans normal', Helvetica sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 auto;
+}
+
+@mixin max-width{
+  max-width: 1200px;
+  width: 100%;
+}
+@mixin tablet-max-width{
+  max-width: 768px;
+  width: 100%;
+}
+@mixin mobile-max-width{
+  max-width:320px;
+  width: 100%;
+}

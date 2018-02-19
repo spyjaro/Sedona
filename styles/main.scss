@@ -1,0 +1,21 @@
+@import '../node_modules/reset.css';
+@import "mixins.scss";
+@import "fonts.scss";
+@import "header.scss";
+@import "content.scss";
+@import "footer.scss";
+
+
+
+.body{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  font-family:"PT Sans",Helvetica sans-serif;
+}
+
+.wrapper{
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
