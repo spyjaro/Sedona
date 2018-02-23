@@ -150,23 +150,15 @@ function toComment(sourceMap) {
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(2);
-(function webpackMissingModule() { throw new Error("Cannot find module \"build\""); }());
+// require('./js/hamburger.js');
 
 
 /***/ }),
 /* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(3);
-__webpack_require__(19);
 
-
-/***/ }),
-/* 3 */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-var content = __webpack_require__(4);
+var content = __webpack_require__(3);
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -180,7 +172,7 @@ var options = {"hmr":true}
 options.transform = transform
 options.insertInto = undefined;
 
-var update = __webpack_require__(17)(content, options);
+var update = __webpack_require__(16)(content, options);
 
 if(content.locals) module.exports = content.locals;
 
@@ -212,21 +204,21 @@ if(false) {
 }
 
 /***/ }),
-/* 4 */
+/* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(0)(undefined);
 // imports
-exports.i(__webpack_require__(5), "");
+exports.i(__webpack_require__(4), "");
 
 // module
-exports.push([module.i, "@font-face {\n  font-family: \"PT Sans heading\";\n  src: url(" + __webpack_require__(6) + ");\n  font-style: normal;\n  font-weight: normal; }\n\n@font-face {\n  font-family: \"PT Sans normal\";\n  src: url(" + __webpack_require__(7) + ");\n  font-style: normal;\n  font-weight: normal; }\n\n.header {\n  max-width: 1200px;\n  width: 100%; }\n\n.nav-trigger + label {\n  visibility: hidden; }\n\n.nav__items {\n  display: flex;\n  justify-content: space-around;\n  flex-direction: row; }\n\n.nav__item {\n  box-sizing: border-box;\n  width: 20%;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  height: 56px; }\n  .nav__item--link {\n    position: relative;\n    text-decoration: none;\n    font-size: 14px;\n    font-weight: 700;\n    line-height: 26px;\n    margin: 0 auto;\n    font-size: 21px;\n    font-family: 'PT Sans heading', Helvetica sans-serif;\n    text-align: center;\n    text-transform: uppercase;\n    font-weight: bold;\n    line-height: 24px;\n    font-size: 0.75em;\n    color: #000; }\n\n.nav__item--logo img {\n  position: absolute;\n  top: -29px;\n  left: -94px; }\n\n@media screen and (max-width: 768px) {\n  .nav__item--logo img {\n    position: absolute;\n    top: -28px;\n    left: -52px;\n    width: 102px;\n    height: 83px; } }\n\n@media screen and (max-width: 320px) {\n  .wrapper {\n    display: flex;\n    flex-direction: column; }\n  .header {\n    height: 279px;\n    top: 279px; }\n  .nav__items {\n    position: relative;\n    display: flex;\n    align-items: flex-start;\n    flex-direction: column;\n    max-width: 320px;\n    margin-bottom: 279px; }\n    .nav__items .nav__item {\n      width: 100%;\n      height: 56px;\n      background-color: #81b3d2;\n      border: 1px solid  #9ac1db; }\n      .nav__items .nav__item--link {\n        width: 100%;\n        display: flex;\n        justify-content: center;\n        margin: 0 auto;\n        font-size: 21px;\n        font-family: 'PT Sans heading', Helvetica sans-serif;\n        text-align: center;\n        text-transform: uppercase;\n        font-weight: bold;\n        line-height: 24px;\n        color: #fff; }\n      .nav__items .nav__item--logo {\n        display: flex;\n        order: 5;\n        background-color: #fff;\n        text-align: center;\n        position: absolute;\n        top: 223px; }\n        .nav__items .nav__item--logo .sedona-logo {\n          visibility: visible;\n          display: block; }\n        .nav__items .nav__item--logo .nav__item--link img {\n          left: calc(50% - 51px);\n          text-align: center; }\n  .social-list__link:hover {\n    text-decoration: underline; }\n  #nav-trigger + label {\n    visibility: visible; }\n  .header {\n    height: 56px; }\n  .nav-trigger {\n    clip: rect(0, 0, 0, 0); }\n  .hamburger {\n    position: absolute;\n    right: 15px;\n    top: 15px;\n    color: #000;\n    height: 25px;\n    width: 25px;\n    cursor: pointer;\n    background-image: url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' width='30px' height='30px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><rect width='30' height='6'/><rect y='24' width='30' height='6'/><rect y='12' width='30' height='6'/></svg>\");\n    background-size: contain; } }\n\n#nav-trigger {\n  display: none; }\n\n.x-icon {\n  position: absolute;\n  right: 11px;\n  top: 15px;\n  color: #fff;\n  height: 28px;\n  width: 28px;\n  cursor: pointer;\n  background-image: url(\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALuSURBVHhe7dxJihRBGMXxcu/G2a0ewJXHEJxn8Q6NF9Ct7j2Qe+dp7Ql06wD6PtoHRfBVdUZmRGQM7w8PiupFZ8aPhuymqY1SSimllFJKKaWUUoN1HLt0+HK4zmMXD1/WkWG8wn5gl+2NgTKMr9g3rAoUYvz9v5FQiMF7Xx0lxOBGQAkxOEO5gBVvFwbXM8ouDK44ylEYXI8oR2FwRVHsacoO27uQcD2hTMWw/cFuYcWyQx4JJRbjEVa8UVCawGC9ozSFwXpFaRKD9YbSNAaLQfmO1YrSBQZrHaUrDNYqSpcYrDWUrjFYKyhDYDA7ZDts7+bCrYEyFAarFWVIDFYbytAYrBYUYWy1NoownNZCEcaeSqMIY0KlUIQRUW4UYcwoF4owFpQaRRgJSoUijIQtRRFGhuaiCCNjsShXMGFkLgZl6oSxsJQowkhUChRhJG4JijAyNQdFGJmzpynv4HftGaYyFfN7Bmf/9WI/WSpxhvEF8w79qAklceewuRicUBKVAoMTysJSYnBCmZlhfMa8Qw1nj7ZPMTts7+vhhBLZWSwG4yFm2SELJXFzMZhQEmYYnzDv8MIZxgPMSygJisW4j+1LKAs6g6XEYEKZUS4MFoNif7gcGsUwPmLe4YQzjHvYnIQyoViMu9iShLInw/iAeYcRLgUGE4rTWhhMKFsZxnvMu/lwhnEHy5Edsh22933DdYsSi3Eby9nQKIbxDvNuNlwJDDYkymlsKsZvrBQGGwqldgw2BEosRtEPjHTqGsUw3mLezYSrAYN1iXIKm4rxC6sFg3WF0joG6wLFMN5g3kWHqxmDNY0Si3ETa6EmUU5iUzF+Yq1gsKZQesdgTaAYxmvMu6hwLWOwqlFOYDEYN7AeqhblMeZdRDjDuI71VAzKc6xYTzDvIrgeMdgUlJfYMaxou1B6xmD7UFbBYCGKYVzDRshDWRWDEcUwrtobA7WNUgUGO8BGw2CG8gKrBkMppZRSSimllFJKKTVcm80/VDrHw4UX9GgAAAAASUVORK5CYII=\");\n  background-size: contain; }\n\n.main {\n  box-sizing: border-box;\n  overflow: hidden; }\n\n.intro--first-page {\n  background-image: url(" + __webpack_require__(8) + ");\n  height: 518px;\n  max-width: 1200px;\n  width: 100%;\n  display: flex;\n  justify-content: center;\n  background-size: cover;\n  background-repeat: no-repeat;\n  background-position: center; }\n\n.intro__banner {\n  max-width: 460px;\n  width: 100%;\n  height: 350px;\n  margin-top: 78px;\n  transformation: .2s; }\n\n.title {\n  background-color: #81b3d2;\n  width: 33.3333%;\n  display: flex;\n  flex-direction: column; }\n\n.content-title {\n  padding-top: 51px;\n  max-width: 486px;\n  width: 100%;\n  margin: 0 auto; }\n\n.content-title__heading {\n  font-size: 20px;\n  padding-top: 23px;\n  margin: 0 auto;\n  font-size: 21px;\n  font-family: 'PT Sans heading', Helvetica sans-serif;\n  text-align: center;\n  text-transform: uppercase;\n  font-weight: bold;\n  line-height: 24px; }\n\n.content-title__info {\n  padding-top: 42px;\n  padding-bottom: 55px;\n  font-size: 17px;\n  font-family: 'PT Sans normal', Helvetica sans-serif;\n  text-align: center;\n  text-transform: uppercase;\n  margin: 0 auto;\n  color: #696969; }\n\n.content-advantages__first-row {\n  max-width: 1200px;\n  width: 100%;\n  display: flex;\n  justify-content: flex-start;\n  color: #ffffff; }\n\n.first-row__title {\n  width: 33.33333%;\n  display: flex;\n  flex-direction: column; }\n\n.title--heading {\n  margin: 0 auto;\n  font-size: 21px;\n  font-family: 'PT Sans heading', Helvetica sans-serif;\n  text-align: center;\n  text-transform: uppercase;\n  font-weight: bold;\n  line-height: 24px;\n  padding-top: 57px;\n  max-width: 160px; }\n\n.title--number {\n  margin: 0 auto;\n  padding-top: 21px;\n  text-align: center; }\n\n.title--number {\n  font-size: 17px;\n  font-family: 'PT Sans normal', Helvetica sans-serif;\n  text-align: center;\n  text-transform: uppercase;\n  margin: 0 auto; }\n\n.title--info {\n  font-size: 17px;\n  font-family: 'PT Sans normal', Helvetica sans-serif;\n  text-align: center;\n  text-transform: uppercase;\n  margin: 0 auto;\n  padding-top: 32px;\n  max-width: 257px; }\n\n.first-row__bg {\n  background-image: url(" + __webpack_require__(9) + ");\n  width: 66.666%; }\n\n.content-advantages__second-row {\n  display: flex;\n  justify-content: space-between; }\n\n.second-row__features {\n  margin-top: 60px;\n  text-align: center;\n  display: flex;\n  flex-direction: column; }\n\n.features__icon-wrap,\n.features__text-wrap {\n  flex-direction: column;\n  width: 100%; }\n\n.second-row__features--header {\n  margin: 0 auto;\n  font-size: 21px;\n  font-family: 'PT Sans heading', Helvetica sans-serif;\n  text-align: center;\n  text-transform: uppercase;\n  font-weight: bold;\n  line-height: 24px;\n  color: #000;\n  padding: 33px 0; }\n\n.second-row__features--info {\n  font-size: 17px;\n  font-family: 'PT Sans normal', Helvetica sans-serif;\n  text-align: center;\n  text-transform: uppercase;\n  margin: 0 auto;\n  color: #333333;\n  padding-bottom: 67px;\n  max-width: 270px;\n  width: 100%; }\n\n.content-advantages__third-row {\n  display: flex;\n  justify-content: flex-end; }\n\n.third-row__bg {\n  width: 66.666666%;\n  height: 256px;\n  background-image: url(" + __webpack_require__(10) + "); }\n  .third-row__bg img {\n    max-width: 799px;\n    width: 100%;\n    height: 256px; }\n\n.third-row__title {\n  width: 33.33333%;\n  display: flex;\n  flex-direction: column;\n  color: #fff; }\n\n.content-advantages__fourth-row {\n  display: flex;\n  justify-content: flex-start; }\n\n.fourth-row__title {\n  background-color: #eee;\n  color: #000;\n  padding-bottom: 47px; }\n\n.search-hotel {\n  max-width: 1200px;\n  width: 100%;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  padding-bottom: 66px; }\n\n.search-hotel__title {\n  margin: 0 auto;\n  font-size: 21px;\n  font-family: 'PT Sans heading', Helvetica sans-serif;\n  text-align: center;\n  text-transform: uppercase;\n  font-weight: bold;\n  line-height: 24px;\n  font-size: 30px;\n  padding-top: 57px;\n  padding-bottom: 39px; }\n\n.search-hotel__info {\n  font-size: 17px;\n  font-family: 'PT Sans normal', Helvetica sans-serif;\n  text-align: center;\n  text-transform: uppercase;\n  margin: 0 auto;\n  max-width: 430px;\n  width: 100%;\n  padding-bottom: 52px; }\n\n.search-hotel__button {\n  color: #fff;\n  max-width: 458px;\n  width: 100%;\n  height: 58px;\n  margin: 0 auto;\n  font-size: 21px;\n  font-family: 'PT Sans heading', Helvetica sans-serif;\n  text-align: center;\n  text-transform: uppercase;\n  font-weight: bold;\n  line-height: 24px;\n  background-color: #81b3d2;\n  border: none; }\n\n.map iframe {\n  left: 0;\n  top: 0;\n  height: 350px;\n  width: 100%; }\n\n@media screen and (max-width: 768px) {\n  .intro--first-page {\n    max-width: 768px;\n    width: 100%;\n    background-repeat: no-repeat;\n    background-size: auto;\n    background-position: center;\n    background-image: url(" + __webpack_require__(11) + "); }\n  .content-title {\n    padding-top: 23px; }\n  .search-hotel {\n    padding-bottom: 57px; }\n    .search-hotel__info {\n      padding-bottom: 49px; } }\n\n@media screen and (max-width: 320px) {\n  .intro--first-page {\n    height: 389px;\n    background-position: 50% 50%;\n    background-image: url(" + __webpack_require__(12) + ");\n    background-repeat: no-repeat; }\n  .intro__banner {\n    margin-top: 0; }\n  .content-title__info {\n    padding-bottom: 0; }\n  .content-advantages__first-row {\n    display: flex;\n    flex-direction: column; }\n    .content-advantages__first-row .first-row__title,\n    .content-advantages__first-row .first-row__bg {\n      width: 100%; }\n    .content-advantages__first-row .first-row__title:first-child {\n      padding-top: 37px;\n      background-image: url(" + __webpack_require__(13) + ");\n      background-repeat: no-repeat;\n      background-position: 75% 0%; }\n    .content-advantages__first-row .first-row__title .title--heading {\n      padding-top: 43px;\n      max-width: 257px;\n      font-size: 18px; }\n    .content-advantages__first-row .first-row__title .title--info {\n      padding-top: 26px;\n      padding-bottom: 46px; }\n    .content-advantages__first-row .first-row__bg {\n      display: block;\n      height: 260px;\n      max-width: 320px;\n      width: 100%;\n      background-image: url(" + __webpack_require__(14) + "); }\n  .content-advantages__second-row {\n    display: flex;\n    flex-direction: column; }\n    .content-advantages__second-row .second-row__features {\n      margin-top: 24px;\n      display: flex;\n      flex-direction: row;\n      max-width: 320px;\n      width: 100%; }\n      .content-advantages__second-row .second-row__features .features__icon-wrap {\n        width: 20%; }\n      .content-advantages__second-row .second-row__features--header {\n        padding: 0; }\n    .content-advantages__second-row .second-row__features--logo {\n      width: 39px;\n      height: 37px; }\n    .content-advantages__second-row .features__text-wrap .second-row__features--header,\n    .content-advantages__second-row .features__text-wrap .second-row__features--info {\n      text-align: left;\n      padding: 0 0 10px 10px; }\n    .content-advantages__second-row .features__text-wrap:first-child {\n      margin-top: 10px; }\n    .content-advantages__second-row .features__text-wrap:last-child {\n      margin-bottom: 20px; }\n  .content-advantages__third-row {\n    display: flex;\n    flex-direction: column-reverse;\n    height: 451px; }\n    .content-advantages__third-row .third-row__title {\n      height: 191px;\n      max-width: 320px;\n      width: 100%; }\n      .content-advantages__third-row .third-row__title .title--heading {\n        padding-top: 45px;\n        font-size: 18px;\n        max-width: 320px;\n        width: 100%; }\n      .content-advantages__third-row .third-row__title .title--info {\n        padding-top: 26px;\n        font-size: 15px; }\n    .content-advantages__third-row .third-row__bg {\n      width: 100%;\n      max-width: 320px;\n      background-image: url(" + __webpack_require__(15) + "); }\n  .content-advantages__fourth-row {\n    display: flex;\n    flex-direction: column; }\n    .content-advantages__fourth-row .fourth-row__title {\n      max-width: 320px;\n      width: 100%;\n      padding-bottom: 0;\n      border-bottom: 1px solid #d6d6d6; }\n      .content-advantages__fourth-row .fourth-row__title:last-child {\n        border-bottom: none; }\n      .content-advantages__fourth-row .fourth-row__title .title--heading {\n        max-width: 320px;\n        width: 100%;\n        padding-top: 29px; }\n      .content-advantages__fourth-row .fourth-row__title .title--number {\n        padding-bottom: 26px; }\n      .content-advantages__fourth-row .fourth-row__title .title--info {\n        padding-top: 0;\n        padding-bottom: 17px; }\n  .search-hotel {\n    padding-bottom: 0;\n    max-width: 320px;\n    width: 100%; }\n    .search-hotel .search-hotel__title {\n      font-size: 22px;\n      transformation: 0.2s;\n      padding-top: 33px;\n      padding-bottom: 0; }\n    .search-hotel .search-hotel__info {\n      font-size: 17px;\n      font-family: 'PT Sans normal', Helvetica sans-serif;\n      text-align: center;\n      text-transform: uppercase;\n      margin: 0 auto;\n      font-size: 15px;\n      padding-top: 33px;\n      padding-bottom: 42px; }\n    .search-hotel .search-hotel__button {\n      max-width: 280px;\n      height: 58px;\n      width: 90%;\n      margin: auto;\n      margin-bottom: 50px;\n      text-align: center; }\n  .map {\n    max-width: 320px;\n    width: 100%; } }\n\n.footer {\n  display: flex;\n  justify-content: flex-start;\n  max-width: 1200px;\n  width: 100%;\n  height: 120px; }\n\n.footer__hashtag,\n.footer__social,\n.footer__copyright {\n  width: 33.3333%;\n  top: .05em; }\n\n.footer__hashtag {\n  display: flex;\n  justify-content: center;\n  flex-direction: column; }\n  .footer__hashtag span {\n    margin: 0 auto;\n    font-size: 21px;\n    font-family: 'PT Sans heading', Helvetica sans-serif;\n    text-align: center;\n    text-transform: uppercase;\n    font-weight: bold;\n    line-height: 24px; }\n\n.footer__social {\n  display: flex;\n  flex-direction: column;\n  justify-content: center; }\n\n.social-list {\n  display: flex;\n  flex-direction: row;\n  justify-content: center; }\n\n.social-list__item {\n  padding: 0 3px;\n  display: flex;\n  align-items: center; }\n  .social-list__item img {\n    width: 48px;\n    height: 46px; }\n\n.social-list__link img {\n  background-color: #81b3d2; }\n\n.footer__copyright {\n  margin: 0 auto;\n  display: flex;\n  flex-direction: row;\n  justify-content: flex-end;\n  align-items: center; }\n  .footer__copyright--text {\n    font-size: 17px;\n    font-family: 'PT Sans normal', Helvetica sans-serif;\n    text-align: center;\n    text-transform: uppercase;\n    margin: 0 auto;\n    margin: 0;\n    padding-right: 5px; }\n  .footer__copyright:after {\n    content: url(" + __webpack_require__(16) + "); }\n\n@media screen and (max-width: 320px) {\n  .footer {\n    max-width: 320px;\n    width: 100%;\n    height: 243px;\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center; }\n    .footer .footer__hashtag,\n    .footer .footer__social,\n    .footer .footer__copyright {\n      max-width: 320px;\n      width: 100%; }\n    .footer .footer__social {\n      padding: 41px 0; }\n    .footer .footer__copyright {\n      justify-content: center; } }\n\n.body {\n  box-sizing: border-box;\n  display: flex;\n  flex-direction: column;\n  font-family: \"PT Sans\",Helvetica sans-serif; }\n\n.wrapper {\n  max-width: 1200px;\n  width: 100%;\n  margin: 0 auto; }\n", ""]);
+exports.push([module.i, "@font-face {\n  font-family: \"PT Sans heading\";\n  src: url(" + __webpack_require__(5) + ");\n  font-style: normal;\n  font-weight: normal; }\n\n@font-face {\n  font-family: \"PT Sans normal\";\n  src: url(" + __webpack_require__(6) + ");\n  font-style: normal;\n  font-weight: normal; }\n\n.header {\n  max-width: 1200px;\n  width: 100%; }\n\n.nav-trigger + label {\n  visibility: hidden; }\n\n.nav__items {\n  display: flex;\n  justify-content: space-around;\n  flex-direction: row; }\n\n.nav__item {\n  box-sizing: border-box;\n  width: 20%;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  height: 56px; }\n  .nav__item--link {\n    position: relative;\n    text-decoration: none;\n    font-size: 14px;\n    font-weight: 700;\n    line-height: 26px;\n    margin: 0 auto;\n    font-size: 21px;\n    font-family: 'PT Sans heading', Helvetica sans-serif;\n    text-align: center;\n    text-transform: uppercase;\n    font-weight: bold;\n    line-height: 24px;\n    font-size: 0.75em;\n    color: #000; }\n\n.nav__item--logo img {\n  position: absolute;\n  top: -29px;\n  left: -94px; }\n\n@media screen and (max-width: 768px) {\n  .nav__item--logo img {\n    position: absolute;\n    top: -28px;\n    left: -52px;\n    width: 102px;\n    height: 83px; } }\n\n@media screen and (max-width: 320px) {\n  .wrapper {\n    display: flex;\n    flex-direction: column; }\n  .header {\n    height: 279px;\n    top: 279px; }\n  .nav__items {\n    position: relative;\n    display: flex;\n    align-items: flex-start;\n    flex-direction: column;\n    max-width: 320px;\n    margin-bottom: 279px; }\n    .nav__items .nav__item {\n      width: 100%;\n      height: 56px;\n      background-color: #81b3d2;\n      border: 1px solid  #9ac1db; }\n      .nav__items .nav__item--link {\n        width: 100%;\n        display: flex;\n        justify-content: center;\n        margin: 0 auto;\n        font-size: 21px;\n        font-family: 'PT Sans heading', Helvetica sans-serif;\n        text-align: center;\n        text-transform: uppercase;\n        font-weight: bold;\n        line-height: 24px;\n        color: #fff; }\n      .nav__items .nav__item--logo {\n        display: flex;\n        order: 5;\n        background-color: #fff;\n        text-align: center;\n        position: absolute;\n        top: 223px; }\n        .nav__items .nav__item--logo .sedona-logo {\n          visibility: visible;\n          display: block; }\n        .nav__items .nav__item--logo .nav__item--link img {\n          left: calc(50% - 51px);\n          text-align: center; }\n  .social-list__link:hover {\n    text-decoration: underline; }\n  #nav-trigger + label {\n    visibility: visible; }\n  .header {\n    height: 56px; }\n  .nav-trigger {\n    clip: rect(0, 0, 0, 0); }\n  .hamburger {\n    position: absolute;\n    right: 15px;\n    top: 15px;\n    color: #000;\n    height: 25px;\n    width: 25px;\n    cursor: pointer;\n    background-image: url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' width='30px' height='30px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><rect width='30' height='6'/><rect y='24' width='30' height='6'/><rect y='12' width='30' height='6'/></svg>\");\n    background-size: contain; } }\n\n#nav-trigger {\n  display: none; }\n\n.x-icon {\n  position: absolute;\n  right: 11px;\n  top: 15px;\n  color: #fff;\n  height: 28px;\n  width: 28px;\n  cursor: pointer;\n  background-image: url(\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALuSURBVHhe7dxJihRBGMXxcu/G2a0ewJXHEJxn8Q6NF9Ct7j2Qe+dp7Ql06wD6PtoHRfBVdUZmRGQM7w8PiupFZ8aPhuymqY1SSimllFJKKaWUUoN1HLt0+HK4zmMXD1/WkWG8wn5gl+2NgTKMr9g3rAoUYvz9v5FQiMF7Xx0lxOBGQAkxOEO5gBVvFwbXM8ouDK44ylEYXI8oR2FwRVHsacoO27uQcD2hTMWw/cFuYcWyQx4JJRbjEVa8UVCawGC9ozSFwXpFaRKD9YbSNAaLQfmO1YrSBQZrHaUrDNYqSpcYrDWUrjFYKyhDYDA7ZDts7+bCrYEyFAarFWVIDFYbytAYrBYUYWy1NoownNZCEcaeSqMIY0KlUIQRUW4UYcwoF4owFpQaRRgJSoUijIQtRRFGhuaiCCNjsShXMGFkLgZl6oSxsJQowkhUChRhJG4JijAyNQdFGJmzpynv4HftGaYyFfN7Bmf/9WI/WSpxhvEF8w79qAklceewuRicUBKVAoMTysJSYnBCmZlhfMa8Qw1nj7ZPMTts7+vhhBLZWSwG4yFm2SELJXFzMZhQEmYYnzDv8MIZxgPMSygJisW4j+1LKAs6g6XEYEKZUS4MFoNif7gcGsUwPmLe4YQzjHvYnIQyoViMu9iShLInw/iAeYcRLgUGE4rTWhhMKFsZxnvMu/lwhnEHy5Edsh22933DdYsSi3Eby9nQKIbxDvNuNlwJDDYkymlsKsZvrBQGGwqldgw2BEosRtEPjHTqGsUw3mLezYSrAYN1iXIKm4rxC6sFg3WF0joG6wLFMN5g3kWHqxmDNY0Si3ETa6EmUU5iUzF+Yq1gsKZQesdgTaAYxmvMu6hwLWOwqlFOYDEYN7AeqhblMeZdRDjDuI71VAzKc6xYTzDvIrgeMdgUlJfYMaxou1B6xmD7UFbBYCGKYVzDRshDWRWDEcUwrtobA7WNUgUGO8BGw2CG8gKrBkMppZRSSimllFJKKTVcm80/VDrHw4UX9GgAAAAASUVORK5CYII=\");\n  background-size: contain; }\n\n.main {\n  box-sizing: border-box;\n  overflow: hidden; }\n\n.intro--first-page {\n  background-image: url(" + __webpack_require__(7) + ");\n  height: 518px;\n  max-width: 1200px;\n  width: 100%;\n  display: flex;\n  justify-content: center;\n  background-size: cover;\n  background-repeat: no-repeat;\n  background-position: center; }\n\n.intro__banner {\n  max-width: 460px;\n  width: 100%;\n  height: 350px;\n  margin-top: 78px;\n  transformation: .2s; }\n\n.title {\n  background-color: #81b3d2;\n  width: 33.3333%;\n  display: flex;\n  flex-direction: column; }\n\n.content-title {\n  padding-top: 51px;\n  max-width: 486px;\n  width: 100%;\n  margin: 0 auto; }\n\n.content-title__heading {\n  font-size: 20px;\n  padding-top: 23px;\n  margin: 0 auto;\n  font-size: 21px;\n  font-family: 'PT Sans heading', Helvetica sans-serif;\n  text-align: center;\n  text-transform: uppercase;\n  font-weight: bold;\n  line-height: 24px; }\n\n.content-title__info {\n  padding-top: 42px;\n  padding-bottom: 55px;\n  font-size: 17px;\n  font-family: 'PT Sans normal', Helvetica sans-serif;\n  text-align: center;\n  text-transform: uppercase;\n  margin: 0 auto;\n  color: #696969; }\n\n.content-advantages__first-row {\n  max-width: 1200px;\n  width: 100%;\n  display: flex;\n  justify-content: flex-start;\n  color: #ffffff; }\n\n.first-row__title {\n  width: 33.33333%;\n  display: flex;\n  flex-direction: column; }\n\n.title--heading {\n  margin: 0 auto;\n  font-size: 21px;\n  font-family: 'PT Sans heading', Helvetica sans-serif;\n  text-align: center;\n  text-transform: uppercase;\n  font-weight: bold;\n  line-height: 24px;\n  padding-top: 57px;\n  max-width: 160px; }\n\n.title--number {\n  margin: 0 auto;\n  padding-top: 21px;\n  text-align: center; }\n\n.title--number {\n  font-size: 17px;\n  font-family: 'PT Sans normal', Helvetica sans-serif;\n  text-align: center;\n  text-transform: uppercase;\n  margin: 0 auto; }\n\n.title--info {\n  font-size: 17px;\n  font-family: 'PT Sans normal', Helvetica sans-serif;\n  text-align: center;\n  text-transform: uppercase;\n  margin: 0 auto;\n  padding-top: 32px;\n  max-width: 257px; }\n\n.first-row__bg {\n  background-image: url(" + __webpack_require__(8) + ");\n  width: 66.666%; }\n\n.content-advantages__second-row {\n  display: flex;\n  justify-content: space-between; }\n\n.second-row__features {\n  margin-top: 60px;\n  text-align: center;\n  display: flex;\n  flex-direction: column; }\n\n.features__icon-wrap,\n.features__text-wrap {\n  flex-direction: column;\n  width: 100%; }\n\n.second-row__features--header {\n  margin: 0 auto;\n  font-size: 21px;\n  font-family: 'PT Sans heading', Helvetica sans-serif;\n  text-align: center;\n  text-transform: uppercase;\n  font-weight: bold;\n  line-height: 24px;\n  color: #000;\n  padding: 33px 0; }\n\n.second-row__features--info {\n  font-size: 17px;\n  font-family: 'PT Sans normal', Helvetica sans-serif;\n  text-align: center;\n  text-transform: uppercase;\n  margin: 0 auto;\n  color: #333333;\n  padding-bottom: 67px;\n  max-width: 270px;\n  width: 100%; }\n\n.content-advantages__third-row {\n  display: flex;\n  justify-content: flex-end; }\n\n.third-row__bg {\n  width: 66.666666%;\n  height: 256px;\n  background-image: url(" + __webpack_require__(9) + "); }\n  .third-row__bg img {\n    max-width: 799px;\n    width: 100%;\n    height: 256px; }\n\n.third-row__title {\n  width: 33.33333%;\n  display: flex;\n  flex-direction: column;\n  color: #fff; }\n\n.content-advantages__fourth-row {\n  display: flex;\n  justify-content: flex-start; }\n\n.fourth-row__title {\n  background-color: #eee;\n  color: #000;\n  padding-bottom: 47px; }\n\n.search-hotel {\n  max-width: 1200px;\n  width: 100%;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  padding-bottom: 66px; }\n\n.search-hotel__title {\n  margin: 0 auto;\n  font-size: 21px;\n  font-family: 'PT Sans heading', Helvetica sans-serif;\n  text-align: center;\n  text-transform: uppercase;\n  font-weight: bold;\n  line-height: 24px;\n  font-size: 30px;\n  padding-top: 57px;\n  padding-bottom: 39px; }\n\n.search-hotel__info {\n  font-size: 17px;\n  font-family: 'PT Sans normal', Helvetica sans-serif;\n  text-align: center;\n  text-transform: uppercase;\n  margin: 0 auto;\n  max-width: 430px;\n  width: 100%;\n  padding-bottom: 52px; }\n\n.search-hotel__button {\n  color: #fff;\n  max-width: 458px;\n  width: 100%;\n  height: 58px;\n  margin: 0 auto;\n  font-size: 21px;\n  font-family: 'PT Sans heading', Helvetica sans-serif;\n  text-align: center;\n  text-transform: uppercase;\n  font-weight: bold;\n  line-height: 24px;\n  background-color: #81b3d2;\n  border: none; }\n\n.map iframe {\n  left: 0;\n  top: 0;\n  height: 350px;\n  width: 100%; }\n\n@media screen and (max-width: 768px) {\n  .intro--first-page {\n    max-width: 768px;\n    width: 100%;\n    background-repeat: no-repeat;\n    background-size: auto;\n    background-position: center;\n    background-image: url(" + __webpack_require__(10) + "); }\n  .content-title {\n    padding-top: 23px; }\n  .search-hotel {\n    padding-bottom: 57px; }\n    .search-hotel__info {\n      padding-bottom: 49px; } }\n\n@media screen and (max-width: 320px) {\n  .intro--first-page {\n    height: 389px;\n    background-position: 50% 50%;\n    background-image: url(" + __webpack_require__(11) + ");\n    background-repeat: no-repeat; }\n  .intro__banner {\n    margin-top: 0; }\n  .content-title__info {\n    padding-bottom: 0; }\n  .content-advantages__first-row {\n    display: flex;\n    flex-direction: column; }\n    .content-advantages__first-row .first-row__title,\n    .content-advantages__first-row .first-row__bg {\n      width: 100%; }\n    .content-advantages__first-row .first-row__title:first-child {\n      padding-top: 37px;\n      background-image: url(" + __webpack_require__(12) + ");\n      background-repeat: no-repeat;\n      background-position: 75% 0%; }\n    .content-advantages__first-row .first-row__title .title--heading {\n      padding-top: 43px;\n      max-width: 257px;\n      font-size: 18px; }\n    .content-advantages__first-row .first-row__title .title--info {\n      padding-top: 26px;\n      padding-bottom: 46px; }\n    .content-advantages__first-row .first-row__bg {\n      display: block;\n      height: 260px;\n      max-width: 320px;\n      width: 100%;\n      background-image: url(" + __webpack_require__(13) + "); }\n  .content-advantages__second-row {\n    display: flex;\n    flex-direction: column; }\n    .content-advantages__second-row .second-row__features {\n      margin-top: 24px;\n      display: flex;\n      flex-direction: row;\n      max-width: 320px;\n      width: 100%; }\n      .content-advantages__second-row .second-row__features .features__icon-wrap {\n        width: 20%; }\n      .content-advantages__second-row .second-row__features--header {\n        padding: 0; }\n    .content-advantages__second-row .second-row__features--logo {\n      width: 39px;\n      height: 37px; }\n    .content-advantages__second-row .features__text-wrap .second-row__features--header,\n    .content-advantages__second-row .features__text-wrap .second-row__features--info {\n      text-align: left;\n      padding: 0 0 10px 10px; }\n    .content-advantages__second-row .features__text-wrap:first-child {\n      margin-top: 10px; }\n    .content-advantages__second-row .features__text-wrap:last-child {\n      margin-bottom: 20px; }\n  .content-advantages__third-row {\n    display: flex;\n    flex-direction: column-reverse;\n    height: 451px; }\n    .content-advantages__third-row .third-row__title {\n      height: 191px;\n      max-width: 320px;\n      width: 100%; }\n      .content-advantages__third-row .third-row__title .title--heading {\n        padding-top: 45px;\n        font-size: 18px;\n        max-width: 320px;\n        width: 100%; }\n      .content-advantages__third-row .third-row__title .title--info {\n        padding-top: 26px;\n        font-size: 15px; }\n    .content-advantages__third-row .third-row__bg {\n      width: 100%;\n      max-width: 320px;\n      background-image: url(" + __webpack_require__(14) + "); }\n  .content-advantages__fourth-row {\n    display: flex;\n    flex-direction: column; }\n    .content-advantages__fourth-row .fourth-row__title {\n      max-width: 320px;\n      width: 100%;\n      padding-bottom: 0;\n      border-bottom: 1px solid #d6d6d6; }\n      .content-advantages__fourth-row .fourth-row__title:last-child {\n        border-bottom: none; }\n      .content-advantages__fourth-row .fourth-row__title .title--heading {\n        max-width: 320px;\n        width: 100%;\n        padding-top: 29px; }\n      .content-advantages__fourth-row .fourth-row__title .title--number {\n        padding-bottom: 26px; }\n      .content-advantages__fourth-row .fourth-row__title .title--info {\n        padding-top: 0;\n        padding-bottom: 17px; }\n  .search-hotel {\n    padding-bottom: 0;\n    max-width: 320px;\n    width: 100%; }\n    .search-hotel .search-hotel__title {\n      font-size: 22px;\n      transformation: 0.2s;\n      padding-top: 33px;\n      padding-bottom: 0; }\n    .search-hotel .search-hotel__info {\n      font-size: 17px;\n      font-family: 'PT Sans normal', Helvetica sans-serif;\n      text-align: center;\n      text-transform: uppercase;\n      margin: 0 auto;\n      font-size: 15px;\n      padding-top: 33px;\n      padding-bottom: 42px; }\n    .search-hotel .search-hotel__button {\n      max-width: 280px;\n      height: 58px;\n      width: 90%;\n      margin: auto;\n      margin-bottom: 50px;\n      text-align: center; }\n  .map {\n    max-width: 320px;\n    width: 100%; } }\n\n.footer {\n  display: flex;\n  justify-content: flex-start;\n  max-width: 1200px;\n  width: 100%;\n  height: 120px; }\n\n.footer__hashtag,\n.footer__social,\n.footer__copyright {\n  width: 33.3333%;\n  top: .05em; }\n\n.footer__hashtag {\n  display: flex;\n  justify-content: center;\n  flex-direction: column; }\n  .footer__hashtag span {\n    margin: 0 auto;\n    font-size: 21px;\n    font-family: 'PT Sans heading', Helvetica sans-serif;\n    text-align: center;\n    text-transform: uppercase;\n    font-weight: bold;\n    line-height: 24px; }\n\n.footer__social {\n  display: flex;\n  flex-direction: column;\n  justify-content: center; }\n\n.social-list {\n  display: flex;\n  flex-direction: row;\n  justify-content: center; }\n\n.social-list__item {\n  padding: 0 3px;\n  display: flex;\n  align-items: center; }\n  .social-list__item img {\n    width: 48px;\n    height: 46px; }\n\n.social-list__link img {\n  background-color: #81b3d2; }\n\n.footer__copyright {\n  margin: 0 auto;\n  display: flex;\n  flex-direction: row;\n  justify-content: flex-end;\n  align-items: center; }\n  .footer__copyright--text {\n    font-size: 17px;\n    font-family: 'PT Sans normal', Helvetica sans-serif;\n    text-align: center;\n    text-transform: uppercase;\n    margin: 0 auto;\n    margin: 0;\n    padding-right: 5px; }\n  .footer__copyright:after {\n    content: url(" + __webpack_require__(15) + "); }\n\n@media screen and (max-width: 320px) {\n  .footer {\n    max-width: 320px;\n    width: 100%;\n    height: 243px;\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center; }\n    .footer .footer__hashtag,\n    .footer .footer__social,\n    .footer .footer__copyright {\n      max-width: 320px;\n      width: 100%; }\n    .footer .footer__social {\n      padding: 41px 0; }\n    .footer .footer__copyright {\n      justify-content: center; } }\n\n.body {\n  box-sizing: border-box;\n  display: flex;\n  flex-direction: column;\n  font-family: \"PT Sans\",Helvetica sans-serif; }\n\n.wrapper {\n  max-width: 1200px;\n  width: 100%;\n  margin: 0 auto; }\n", ""]);
 
 // exports
 
 
 /***/ }),
-/* 5 */
+/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(0)(undefined);
@@ -240,73 +232,73 @@ exports.push([module.i, "/* http://meyerweb.com/eric/tools/css/reset/ \n   v2.0 
 
 
 /***/ }),
-/* 6 */
+/* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "fonts/PTS75F.ttf";
 
 /***/ }),
-/* 7 */
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "fonts/PTN57f.ttf";
 
 /***/ }),
-/* 8 */
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "5b92c81d726533db0e3bffbe96550460.jpg";
 
 /***/ }),
-/* 9 */
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "0c728aa4a316f1882793fbfbe516cad8.png";
 
 /***/ }),
-/* 10 */
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "581e705cb2e2b82ebf29ab9906bb6539.png";
 
 /***/ }),
-/* 11 */
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "55f71cae194e18fa44e66ac5a9c2cebd.jpg";
 
 /***/ }),
-/* 12 */
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "6d8ad0b2d5416abdf481d14b3d18c457.jpg";
 
 /***/ }),
-/* 13 */
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "0b9b91ac284211f70b7a5e5936948d0f.svg";
 
 /***/ }),
-/* 14 */
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "ba00f1cd777e31b8c118dfe2766fef55.jpg";
 
 /***/ }),
-/* 15 */
+/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "8129161b8d110d1bb01bb27b6554b937.jpg";
 
 /***/ }),
-/* 16 */
+/* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "93ee49cb04499253c13bdccf4b2551c0.png";
 
 /***/ }),
-/* 17 */
+/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -372,7 +364,7 @@ var singleton = null;
 var	singletonCounter = 0;
 var	stylesInsertedAtTop = [];
 
-var	fixUrls = __webpack_require__(18);
+var	fixUrls = __webpack_require__(17);
 
 module.exports = function(list, options) {
 	if (typeof DEBUG !== "undefined" && DEBUG) {
@@ -688,7 +680,7 @@ function updateLink (link, options, obj) {
 
 
 /***/ }),
-/* 18 */
+/* 17 */
 /***/ (function(module, exports) {
 
 
@@ -781,44 +773,6 @@ module.exports = function (css) {
 	return fixedCss;
 };
 
-
-/***/ }),
-/* 19 */
-/***/ (function(module, exports) {
-
-window.addEventListener('resize', function() {
-    if(window.innerWidth>321){
-        var navElements = document.getElementsByClassName('nav__items');
-        var navLogo = document.getElementsByClassName('nav__item--logo')
-        navElements[0].style.visibility = "visible"
-        navLogo[0].style.margin = 0;
-    }
-});
-
-function toggleNavBar() {
-    var hamburger = document.getElementById('nav-trigger');
-    var main = document.getElementsByClassName('main');
-    var navElements = document.getElementsByClassName('nav__items');
-    var navLogo = document.getElementsByClassName('nav__item--logo');
-    var navTrigger = document.getElementById('nav-trigger');
-    var label = document.getElementById('label');
-
-    if(hamburger.checked && window.innerWidth<321){
-        label.className = "x-icon"
-        navLogo[0].style.margin = '0';
-        navLogo[0].visibility = "visible";
-        navElements[0].style.visibility = "visible";
-    }
-    else if(!hamburger.checked ){
-        label.className = "hamburger";
-        var navElements = document.getElementsByClassName('nav__items');
-        main[0].style.margin = '0';
-        navLogo[0].style.marginTop = '-223px';
-        navElements[0].style.visibility = "hidden";
-        navTrigger.label.style.visibility = "hidden";
-        navLogo.visibility = 'visible';
-    }
-}
 
 /***/ })
 /******/ ]);
