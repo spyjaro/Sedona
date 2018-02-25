@@ -36,10 +36,21 @@
   padding: 0 3px;
   display: flex;
   align-items: center;
-    img{
-      width: 48px;
-      height: 46px;
-    }
+  .social-list__link{
+    width: 48px;
+    height: 46px;
+    background-size: cover ;
+    cursor: pointer;
+  }
+  .social-list__icon-tw{
+    background: url('./../img/6-layers.png') 1px 0;
+  }
+  .social-list__icon-fb{
+    background: url('./../img/6-layers.png') 47px 0;
+  }
+  .social-list__icon-yt{
+    background: url('./../img/6-layers.png') 99px 0;
+  }
 }
 
 .social-list__link img{
